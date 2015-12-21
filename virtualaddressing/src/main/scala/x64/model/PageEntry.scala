@@ -27,7 +27,7 @@ object PageEntry{
     new PageEntry(
       BitwiseOperations.getBit(entry,63),
       BitwiseOperations.getBits(entry,12,39),
-      BitwiseOperations.getBit(entry,11),
+      BitwiseOperations.getBit(entry,2),
       BitwiseOperations.getBit(entry,1)
     )
 
