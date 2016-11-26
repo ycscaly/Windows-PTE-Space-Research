@@ -12,7 +12,7 @@ object AddressTranslation {
                            ): Long = {
 
     val virtualAddress = VirtualAddress(virtualAddressRaw)
-    val physicalAddress = PageEntry.physicalAddressFromPTE(pageTableEntryRaw,virtualAddress.byteWithinPage)
+    val physicalAddress = PageEntry.physicalAddressFromPTE(pageTableEntryRaw,virtualAddress.offsetWithinPage)
     physicalAddress
 
   }
